@@ -45,9 +45,9 @@ import { getData } from '../utils/collection';
 import jwtDecoder from '../utils/decoders';
 import Storage from '../utils/storage';
 import { delay } from '../utils/timers';
-import { ProjectColumnType } from '../types/grid';
+import { ProjectDataSourceType } from '../types/grid';
 
-const dataSource = ref<ProjectColumnType[]>([]);
+const dataSource = ref<ProjectDataSourceType[]>([]);
 const isLoading = ref<boolean>(true);
 
 onMounted(async () => {

@@ -17,3 +17,10 @@ export type ProductOptionType = {
   _id: string;
   name: string;
 };
+
+export type ProjectDataSourceType = {
+  _id: string;
+  name: string;
+  description: string;
+  products: ProductColumnType[];
+};
