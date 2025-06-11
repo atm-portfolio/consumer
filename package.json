@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build:preview": "npm run build && vite preview",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && cp _redirects dist/_redirects",
     "clear:npm": "rm -rf node_modules package-lock.json",
     "deploy": "tsc -b && vite build && sh post-build.sh",
     "lint": "eslint --fix",
