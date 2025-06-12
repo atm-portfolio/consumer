@@ -13,20 +13,16 @@ function certifyAuthentication(token: string) {
     return false;
   }
 
-  const jwt = jwtDecoder(token);
-  const { role } = JSON.parse(jwt);
-
-  if (role === 'ADMIN') {
-    return false;
-  }
-
   Storage.set('token.consumer', token);
   return true;
 }
 
 async function retry(formDataJson: Record<string, string | null>) {
   try {
-    const response = await api.post(`${apiBaseUrl}/authenticate`, formDataJson);
+    const response = await api.post(`${apiBaseUrl}/authenticate`, {
+      ...formDataJson,
+      scope: 'USER',
+    });
     return certifyAuthentication(response.data);
   } catch {
     return false;
@@ -40,7 +36,7 @@ export async function signIn(formData: FormData) {
   };
 
   return await api
-    .post(`${apiBaseUrl}/authenticate`, formDataJson)
+    .post(`${apiBaseUrl}/authenticate`, { ...formDataJson, scope: 'USER' })
     .then(function (response) {
       return certifyAuthentication(response.data);
     })
