@@ -19,9 +19,9 @@ const i18n = createI18n({
         gettingStartedDescription:
           'To get started, you will need to log in with a credential that has user role to have be able to consume products.',
         gettingStartedFreeTier:
-          "Please note that I'm using a free tier service, which means it may take some time for the application to wake up. Please be patient.",
+          "Please note that I'm using a free tier service, which means it may take some time for the application to wake up, usually within 50 seconds. Please be patient.",
         gettingStartedMinimizeWaitTimes:
-          'So to minimize consecutive waiting times, once the application is up we ping the server every 10 minutes to keep it alive. So your experience will not have any long loading times at all.',
+          'So to minimize consecutive waiting times, once the application is up it will ping the server every 10 minutes to keep it alive. So your experience will not have any long loading times at all.',
         gettingStartedOrangeBar:
           'You should see an orange bar on top of the screen when the application is trying to wake the server up. After the server is properly up and running, all other endpoints calls will respond quickly.',
         gettingStartedPeek:
@@ -63,9 +63,9 @@ const i18n = createI18n({
         gettingStartedDescription:
           'Pour commencer, vous devrez vous connecter avec un identifiant qui a le r le d utilisateur pour pouvoir consommer des produits.',
         gettingStartedFreeTier:
-          'Veuillez noter que j utilise un service de niveau gratuit, ce qui signifie que l application peut prendre un peu de temps  s  veiller. Veuillez   tre patient.',
+          "Notez que j'utilise un service de niveau gratuit, ce qui signifie que l'application peut prendre un peu de temps pour se lancer, en g n ral moins de 50 secondes. Veuillez patienter.",
         gettingStartedMinimizeWaitTimes:
-          "Pour minimiser les temps d'attente consécutifs, une fois que l'application est démarrée, nous pingons le serveur toutes les 10 minutes pour le maintenir actif. Ainsi, votre expérience ne comportera aucun temps de chargement long.",
+          "Ainsi, pour minimiser les temps d'attente consécutifs, une fois que l'application est opérationnelle, elle pingera le serveur toutes les 10 minutes pour le maintenir en vie. Ainsi, votre expérience n'aura pas de longs temps de chargement.",
         gettingStartedOrangeBar:
           "Vous devriez voir une barre orange en haut de l'écran lorsque l'application essaie de réveiller le serveur. Une fois que le serveur est correctement démarré, tous les autres appels aux points de terminaison répondront rapidement.",
         gettingStartedPeek:

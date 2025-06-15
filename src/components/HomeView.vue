@@ -7,16 +7,15 @@
 
     <h3>{{ $t('message.gettingStarted') }}</h3>
     <p>{{ $t('message.gettingStartedDescription') }}</p>
-    <p>{{ $t('message.gettingStartedFreeTier') }}</p>
+    <p>
+      <strong>{{ $t('message.gettingStartedFreeTier') }}</strong>
+    </p>
     <p>{{ $t('message.gettingStartedOrangeBar') }}</p>
     <p>{{ $t('message.gettingStartedMinimizeWaitTimes') }}</p>
     <p><strong>Username:</strong> guest@ath-portfolio.ca</p>
     <p><strong>Password:</strong> guestPublic</p>
 
-    <div
-      v-if="!isSigned"
-      class="app-login"
-    >
+    <div v-if="!isSigned" class="app-login">
       <h3 id="login">
         {{ $t('message.login') }}
       </h3>
@@ -26,27 +25,21 @@
           type="text"
           autocomplete="email"
           :placeholder="$t('message.email')"
-        >
+        />
         <input
           v-model="password"
           type="password"
           autocomplete="current-password"
           :placeholder="$t('message.password')"
-        >
-        <button
-          type="submit"
-          :disabled="!email || !password || isLoading"
-        >
+        />
+        <button type="submit" :disabled="!email || !password || isLoading">
           <span v-if="isLoading">{{ $t('message.loading') }}</span>
           <span v-else>{{ $t('message.submit') }}</span>
         </button>
-        <span
-          v-if="errorText"
-          class="error-text"
-        >{{ errorText }}</span>
+        <span v-if="errorText" class="error-text">{{ errorText }}</span>
       </form>
     </div>
-    <br>
+    <br />
   </div>
 </template>
 

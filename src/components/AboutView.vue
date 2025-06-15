@@ -214,9 +214,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import netlifyLogo from '../assets/images/netlify.svg';
 import githubSourceLogo from '../assets/images/github-source.svg';
 import mongoDbLogo from '../assets/images/mongodb.svg';
+import netlifyLogo from '../assets/images/netlify.svg';
 import nodeJsLogo from '../assets/images/nodejs.svg';
 import playwrightLogo from '../assets/images/playwright.svg';
 import renderLogo from '../assets/images/render.svg';
