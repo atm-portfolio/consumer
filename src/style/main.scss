@@ -1,20 +1,24 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+
+
 body {
   max-width: 100vw;
   margin: 0;
   padding: 0;
-  background-color: #f2f2fd;
 }
 
 a {
   font-weight: 500;
-  color: $mineShaft;
   text-decoration: inherit;
 
   &:hover {
     @include hovered();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $blackHaze;
   }
 }
 
@@ -54,6 +58,10 @@ a {
     @media (max-width: 768px) {
       display: none;
     }
+
+    @media (prefers-color-scheme: dark) {
+      color: #333333;
+    }
   }
 
   .main-menu {
@@ -80,6 +88,10 @@ a {
     display: none;
   }
 
+  a {
+    color: $mineShaft;
+  }
+
   @media (min-width: 769px) {
     a:first-of-type {
       margin: 0 0 0 10px;
@@ -100,6 +112,7 @@ a {
       height: 30px;
       padding: 0 0 0 10px;
       border-bottom: 0.3px solid $lightGray;
+      color: $blackHaze;
     }
 
     a:first-of-type {
