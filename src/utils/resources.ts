@@ -15,6 +15,8 @@ const i18n = createI18n({
           'This is the dashboard page. Here you can see the list of projects and the list of products of each project. Once you have selected the projects and products you want to consume, click the submit button. This will create data for reports in Admin client.',
         email: 'Email',
         exitApp: 'Exit app',
+        exitAppExplanation:
+          'Click/Tap the icon located at the top-right corner to exit the application.',
         gettingStarted: 'Getting started',
         gettingStartedDescription:
           'To get started, you will need to log in with a credential that has user role to have be able to consume products.',
@@ -38,6 +40,8 @@ const i18n = createI18n({
         hostedOn: 'Hosted on',
         loading: 'Loading...',
         login: 'Login',
+        loginExplanation:
+          'Click/Tap the icon located at the top-right corner to log in',
         logout: 'Logout',
         notFound: 'Not found',
         password: 'Password',
@@ -59,6 +63,8 @@ const i18n = createI18n({
           'C est la page du tableau de bord. Ici, vous pouvez voir la liste des projets et la liste des produits de chaque projet. Une fois que vous avez s lectionn  les projets et les produits que vous souhaitez consommer, cliquez sur le bouton Soumettre. Cela cr era des donn es pour les rapports dans le client Admin.',
         email: 'Email',
         exitApp: "Quitter l'application",
+        exitAppExplanation:
+          'Cliquez/Tapez sur l ic ne situ e au coin sup rieur droit pour quitter l application.',
         gettingStarted: 'Commencer',
         gettingStartedDescription:
           'Pour commencer, vous devrez vous connecter avec un identifiant qui a le r le d utilisateur pour pouvoir consommer des produits.',
@@ -82,6 +88,8 @@ const i18n = createI18n({
         hostedOn: 'Hébergé sur',
         loading: 'Chargement...',
         login: 'Connexion',
+        loginExplanation:
+          'Cliquez/Tapez sur l ic ne situ e au coin sup rieur droit pour vous connecter',
         logout: 'Deconnexion',
         notFound: 'Non trouvé',
         password: 'Mot de passe',

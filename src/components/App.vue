@@ -27,7 +27,7 @@
     </div>
     <span
       v-if="!isSigned"
-      onclick="window.location.href = '/#login'"
+      onclick="document.querySelector('#login').scrollIntoView({behavior: 'smooth'});"
     >
       <i class="fa-solid fa-right-to-bracket auth-link" />
     </span>

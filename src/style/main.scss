@@ -47,11 +47,6 @@ a {
   border-bottom: 0.3px solid $lightGray;
   z-index: 999;
 
-  .auth-link {
-    margin: 0 10px 0 0;
-    color: $cornFlowerBlue;
-  }
-
   h3 {
     margin: 0 0 0 10px;
 
@@ -112,7 +107,12 @@ a {
       height: 30px;
       padding: 0 0 0 10px;
       border-bottom: 0.3px solid $lightGray;
-      color: $blackHaze;
+      color: $mineShaft;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $blackHaze;
+      }
+
     }
 
     a:first-of-type {
@@ -222,12 +222,10 @@ a {
   }
 }
 
-
 // Router related styles
 .router-link-active {
   text-decoration: underline;
 }
-
 
 // Dashboard related styles
 
@@ -239,9 +237,6 @@ a {
 }
 
 .dashboard-content {
-
-
-
   .dashboard-projects {
     display: flex;
     flex-direction: column;
@@ -272,4 +267,9 @@ a {
 
 .error-text {
   color: $red;
+}
+
+.auth-link {
+  margin: 0 10px 0 0;
+  color: $cornFlowerBlue;
 }
